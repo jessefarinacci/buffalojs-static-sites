@@ -1,0 +1,13 @@
+title:            'BuffaloJS: Static Sites'
+email:            'jesse.farinacci@gmail.com'
+description:      'BuffaloJS: Static Sites'
+baseurl:          ''
+url:              'jessefarinacci.github.io/buffalojs-static-sites'
+twitter_username: 'jessefarinacci'
+github_username:  'jessefarinacci'
+
+markdown:         'kramdown'
+theme:            'minima'
+exclude:
+  - Gemfile
+  - Gemfile.lock

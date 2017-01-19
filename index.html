@@ -21,8 +21,8 @@
 <meta property="og:updated_time" content="2017-01-04T17:26:50">
 <meta property="og:image" content="static/images/share-webslides.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@webslides">
-<meta name="twitter:creator" content="@jlantunez">
+<meta name="twitter:site" content="{{site.url}}">
+<meta name="twitter:creator" content="{{site.twitter_username}}">
 <meta name="twitter:title" content="{{site.title}}">
 <meta name="twitter:description" content="{{site.description}}">
 <meta name="twitter:image" content="static/images/share-webslides.jpg">
@@ -70,15 +70,25 @@
             </p>
             <p>
             <ul class="description">
-              <li><a rel="external" target="_blank" href="https://github.com/jessefarinacci" title="Github"> <svg
+              <li><a rel="external" target="_blank" href="https://github.com/{{site.github_username}}" title="Github"> <svg
                     class="fa-github">
                 <use xlink:href="#fa-github"></use>
-              </svg> <em>jessefarinacci</em>
+              </svg> <em>https://github.com/{{site.github_username}}</em>
               </a></li>
-              <li><a rel="external" target="_blank" href="https://twitter.com/jessefarinacci" title="Twitter">
+              <li><a rel="external" target="_blank" href="https://github.com/{{site.github_username}}/buffalojs-static-sites" title="Github"> <svg
+                    class="fa-github">
+                <use xlink:href="#fa-github"></use>
+              </svg> <em>https://github.com/{{site.github_username}}/buffalojs-static-sites</em>
+              </a></li>
+              <li><a rel="external" target="_blank" href="https://{{site.github_username}}.github.io/buffalojs-static-sites" title="Github"> <svg
+                    class="fa-picture-o">
+                <use xlink:href="#fa-picture-o"></use>
+              </svg> <em>https://{{site.github_username}}.github.io/buffalojs-static-sites</em>
+              </a></li>
+              <li><a rel="external" target="_blank" href="https://twitter.com/{{site.twitter_username}}" title="Twitter">
                   <svg class="fa-twitter">
                 <use xlink:href="#fa-twitter"></use>
-              </svg> <em>@jessefarinacci</em>
+              </svg> <em>https://twitter.com/{{site.twitter_username}}</em>
               </a></li>
             </ul>
             </p>
@@ -428,15 +438,15 @@
       <footer>
         <div class="wrap">
           <p>
-            <span class="alignleft"> <a rel="external" target="_blank" href="https://github.com/jessefarinacci"
+            <span class="alignleft"> <a rel="external" target="_blank" href="https://github.com/{{site.github_username}}"
               title="Github"> <svg class="fa-github">
                 <use xlink:href="#fa-github"></use>
-              </svg> <em>jessefarinacci</em>
+              </svg> <em>{{site.github_username}}</em>
             </a>
             </span> <span class="alignright"> <a rel="external" target="_blank"
-              href="https://twitter.com/jessefarinacci" title="Twitter"> <svg class="fa-twitter">
+              href="https://twitter.com/{{site.twitter_username}}" title="Twitter"> <svg class="fa-twitter">
                 <use xlink:href="#fa-twitter"></use>
-              </svg> <em>@jessefarinacci</em>
+              </svg> <em>@{{site.twitter.username}}</em>
             </a>
             </span>
           </p>

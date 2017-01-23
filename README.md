@@ -8,3 +8,5 @@ Special thanks to the following projects:
  * https://unsplash.com/
 
  * http://www.favicon-generator.org/
+
+ * http://fontawesome.io/

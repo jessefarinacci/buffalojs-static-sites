@@ -99,7 +99,7 @@
       </div>
     </section>
     <section>
-      <div class="wrap size-50">
+      <div class="wrap size-80">
         <h3>Agenda</h3>
         <hr>
         <div class="toc">
@@ -124,12 +124,12 @@
               <ol>
                 <li><a href="#slide=34"><span class="chapter">YAML</span> <span class="toc-page">34</span></a></li>
                 <li><a href="#slide=38"><span class="chapter">Jekyll</span> <span class="toc-page">38</span></a></li>
-                <li><a href="#slide=99"><span class="chapter">Alternatives</span> <span class="toc-page">99</span></a></li>
+                <li><a href="#slide=44"><span class="chapter">Alternatives</span> <span class="toc-page">44</span></a></li>
               </ol></li>
-            <li><a href="#slide=99"> <span class="chapter">Continuous Integration</span> <span class="toc-page">99</span>
+            <li><a href="#slide=45"> <span class="chapter">Continuous Integration</span> <span class="toc-page">45</span>
             </a>
               <ol>
-                <li><a href="#slide=99"><span class="chapter">GitLab</span> <span class="toc-page">99</span></a></li>
+                <li><a href="#slide=46"><span class="chapter">GitLab</span> <span class="toc-page">46</span></a></li>
                 <li><a href="#slide=99"><span class="chapter">Docker</span> <span class="toc-page">99</span></a></li>
                 <li><a href="#slide=99"><span class="chapter">Alternatives</span> <span class="toc-page">99</span></a></li>
               </ol></li>
@@ -579,10 +579,10 @@
     </section>
     <section class="bg-apple aligncenter">
       <span class="background dark" style="background-image: url('static/images/unsplash/KG-m_htyWp8.jpg')"></span>
-      <div class="wrap size-50">
+      <div class="wrap size-80">
         <h3>YAML By Example</h3>
         <pre>
-----
+---
 # scalars
 key: value
 another_key: Another value goes here.
@@ -592,32 +592,32 @@ boolean: true
 null_value: null
 long_string: "A string, enclosed in quotes."
 "key with: specials": weird
-----
+---
 </pre>
       </div>
     </section>
     <section class="bg-apple aligncenter">
       <span class="background dark" style="background-image: url('static/images/unsplash/KG-m_htyWp8.jpg')"></span>
-      <div class="wrap size-50">
+      <div class="wrap size-80">
         <h3>YAML By Example</h3>
         <pre>
-----
+---
 # maps
 a_map:
     key: value
     a_nested_map:
         another_key: 'Another Value'
         hello: world
-----
+---
 </pre>
       </div>
     </section>
     <section class="bg-apple aligncenter">
       <span class="background dark" style="background-image: url('static/images/unsplash/KG-m_htyWp8.jpg')"></span>
-      <div class="wrap size-50">
+      <div class="wrap size-80">
         <h3>YAML By Example</h3>
         <pre>
-----
+---
 # sequences
 a_sequence:
     - Item 1
@@ -629,7 +629,7 @@ a_sequence:
     -
         - This is a sequence
         - inside another sequence
-----
+---
 </pre>
       </div>
     </section>
@@ -638,8 +638,98 @@ a_sequence:
       <div class="wrap aligncenter">
         <h1 class="text-landing">Jekyll</h1>
         <p></p>
-        <p class="text-intro">Jekyll.</p>
-        <p>Jekyll.</p>
+        <p class="text-intro">Transform your plain text into static websites and blogs.</p>
+      </div>
+    </section>
+    <section class="bg-apple">
+      <span class="background dark" style="background-image: url('static/images/unsplash/KG-m_htyWp8.jpg')"></span>
+      <div class="wrap">
+        <div class="column">
+          <h2 class="aligncenter">Jekyll</h2>
+          <hr>
+          <div class="grid">
+            <div class="column">
+              <ul>
+                <li><span class="fa fa-check"></span> Simple static site generator</li>
+                <li><span class="fa fa-check"></span> Renders Markdown into HTML/CSS</li>
+                <li><span class="fa fa-check"></span> Generates complete website ready for static serving</li>
+              </ul>
+            </div>
+            <div class="column">
+              <ul>
+                <li><span class="fa fa-check"></span> YAML configuration, global and local</li>
+                <li><span class="fa fa-check"></span> Comprehensive plugin system</li>
+                <li><span class="fa fa-check"></span> Many themes and templates available</li>
+              </ul>
+            </div>
+            <div class="column">
+              <ul>
+                <li><span class="fa fa-check"></span> Ruby based build system</li>
+                <li><span class="fa fa-check"></span> Backend for GitHub Pages function</li>
+                <li><span class="fa fa-check"></span> Blog-aware: permalinks, categories, indexes</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-apple aligncenter">
+      <span class="background dark" style="background-image: url('static/images/unsplash/KG-m_htyWp8.jpg')"></span>
+      <div class="wrap size-80">
+        <h3>Jekyll: Project Organization</h3>
+        <pre>
+.                                          # project
+├── _config.yml                            # global config
+├── _data                                  # global data for use in templates
+|   └── members.yml                        # some data, site.data.members.*
+├── _drafts                                # unpublished posts
+|   └── static-sites-101.md                # 
+├── _includes                              # partials and mixins for include
+|   ├── footer.html                        # 
+|   └── header.html                        # 
+├── _layouts                               # templates that wrap posts/content
+|   ├── default.html                       # 
+|   └── post.html                          # 
+├── _posts                                 # your published posts
+|   └── 2017-03-06-buffalojs-meetup.md     # 
+├── _sass                                  # sass partials
+|   ├── _base.scss                         # 
+├── _site                                  # generated site output directory
+├── .jekyll-metadata                       # internal tracking data
+└── index.html                             # named html file
+</pre>
+      </div>
+    </section>
+    <section class="bg-apple aligncenter">
+      <span class="background dark" style="background-image: url('static/images/unsplash/KG-m_htyWp8.jpg')"></span>
+      <div class="wrap size-80">
+        <h3>Jekyll: Example Post</h3>
+        <pre>
+---
+layout:     post
+title:      "Welcome to Jekyll!"
+date:       2015-11-17 16:16:01 -0600
+categories: jekyll tutorial
+---
+You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `bundle exec jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+
+To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+</pre>
+      </div>
+    </section>
+    <section class="bg-apple aligncenter">
+      <span class="background dark" style="background-image: url('static/images/unsplash/KG-m_htyWp8.jpg')"></span>
+      <div class="wrap size-80">
+        <h3>Jekyll: Building and Serving</h3>
+        <pre>
+bash$ jekyll build                  # build the site into _site
+
+bash$ jekyll build --watch          # ^^ ++ watch for changes
+
+bash$ jekyll serve                  # build the site and serve wth webserver
+
+bash$ jekyll serve --incremental    # ^^ ++ only build changed resources
+</pre>
       </div>
     </section>
     <section class="bg-black aligncenter">

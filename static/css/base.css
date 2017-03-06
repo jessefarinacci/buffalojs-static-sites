@@ -1722,7 +1722,7 @@ Blocks Links li>a = .flexblock.blink (.blink required)
   -webkit-flex-direction: column;
   flex-direction: column;
   margin: 0;
-  padding: 2.4rem;
+  padding: 1rem;
 
 }
 
@@ -1853,10 +1853,10 @@ div + ul, div + ol{
 }
 
 .flexblock.clients li figcaption {
-  padding: 0 2.4rem 2.4rem;
+  padding: 1rem;
 }
 .flexblock.clients.border li figcaption {
-  padding-top: 2.4rem;
+  padding-top: 1rem;
 }
 
 .clients.blink li>a,
@@ -1866,7 +1866,7 @@ div + ul, div + ol{
 
 .clients li img,.clients li svg {
   display: block;
-  padding: 2.4rem;
+  padding: 1rem;
 }
 
 .clients.border li img,.clients.border li svg {

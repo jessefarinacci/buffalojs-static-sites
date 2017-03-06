@@ -52,10 +52,10 @@ svg {
 
 [class*="bg-"] a,
 [class*="bg-gradient-"] a {
-  color: #bce;
+  color: #44d;
 }
-.bg-brown a {color: #c23;}
-.bg-gray a {color: #c23;}
+.bg-brown a {color: #44d;}
+.bg-gray a {color: #44d;}
 
 a,
 .bg-white a,

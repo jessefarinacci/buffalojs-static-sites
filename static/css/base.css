@@ -66,6 +66,8 @@ body {
   line-height: 1;
 }
 
+blockquote { padding: 4rem; }
+
 blockquote,
 q {
   quotes: none
@@ -180,11 +182,11 @@ hr {
   height: 1px;
   width: 100%;
   text-align: center;
-  margin: 3.2rem auto;
+  margin: 1rem auto;
 }
-h2 + hr, h3 + hr {margin-bottom: 4.8rem;
+h2 + hr, h3 + hr {margin-bottom: 2rem;
 }
-p + hr {margin-bottom: 4rem;
+p + hr {margin-bottom: 2rem;
 }
 
 /*
@@ -721,7 +723,7 @@ Auto-fill & Equal height === */
   flex-direction: column;
   -webkit-transition: .3s;
   transition: .3s;   
-  padding: 2.4rem;
+  padding: 1rem;
 }
 
 .grid.vertical-align .column {
@@ -2370,8 +2372,8 @@ CV / News
 }
 
 .number span {
-  font-size: 8rem;
-  line-height: 8rem;
+  font-size: 4rem;
+  line-height: 4rem;
   display: block
 }
 
@@ -2386,19 +2388,15 @@ CV / News
 @media (min-width: 768px) {
   .number,
   .cta .benefit {
-    padding: 4.8rem;
+    padding: 2rem;
     max-width: 50%;
   }
   .cta .benefit {
     text-align: left;
   }
   .number span {
-    font-size: 16rem;
-    line-height: 16rem;
-  }
-  .number span sup {
     font-size: 6rem;
-    vertical-align: middle;
+    line-height: 6rem;
   }
 }
 
